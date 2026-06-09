@@ -1,0 +1,19 @@
+@{
+    ViewData["Title"] = "Perfil do Aluno";
+}
+
+<div class="container mt-4">
+    <h1>Informações do Aluno</h1>
+    <hr />
+
+    <ul>
+        <li><strong>Nome:</strong> @ViewBag.Nome</li>
+        <li><strong>Curso:</strong> @ViewBag.Curso</li>
+        <li><strong>Semestre:</strong> @ViewBag.Semestre</li>
+    </ul>
+
+    <!-- Rota manual em HTML puro, sem Tag Helpers -->
+    <a href="/Aluno/Detalhes/123" class="btn btn-primary">
+        Ver Detalhes do Aluno
+    </a>
+</div>
